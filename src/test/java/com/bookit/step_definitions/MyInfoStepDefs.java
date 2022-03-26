@@ -6,7 +6,11 @@ import com.bookit.utilities.BrowserUtils;
 import com.bookit.utilities.ConfigurationReader;
 import com.bookit.utilities.Driver;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.http.ContentType;
+
+import static io.restassured.RestAssured.given;
 
 public class MyInfoStepDefs {
 
@@ -26,7 +30,5 @@ public class MyInfoStepDefs {
     public void user_is_on_the_my_self_page() {
         SelfPage selfPage = new SelfPage();
         selfPage.goToSelf();
-
     }
-
 }

@@ -16,12 +16,12 @@ public class SelfPage extends TopNavigationBar{
     @FindBy(xpath = "(//*[@class='title is-6'])[2]")
     public WebElement role;
 
-    @FindBy(xpath = "(//*[@class='title is-6'])[3]")
+    @FindBy(xpath = "//p[normalize-space()='Cucumber']")
     public WebElement team;
 
-    @FindBy(xpath = "(//*[@class='title is-6'])[4]")
+    @FindBy(xpath = "//p[normalize-space()='#8']")
     public WebElement batch;
 
-    @FindBy(xpath = "(//*[@class='title is-6'])[5]")
+    @FindBy(xpath = "//p[normalize-space()='IL']")
     public WebElement campus;
 }
